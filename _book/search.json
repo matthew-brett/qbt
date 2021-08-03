@@ -1,0 +1,26 @@
+[
+  {
+    "href": "index.html",
+    "title": "qbt",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\n\n\n\n```{=html}"
+  },
+  {
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": ""
+  }
+]

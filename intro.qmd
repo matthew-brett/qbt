@@ -1,0 +1,9 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+```{r, echo=FALSE}
+df <- read.csv('some_days.csv')
+rt <- kableExtra::kable(df)
+kableExtra::kable_styling(rt, latex_options = 'scale_down')
+```
