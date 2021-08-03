@@ -4,6 +4,16 @@ This is a book created from markdown and executable code.
 
 ```{r, echo=FALSE}
 df <- read.csv('some_days.csv')
-rt <- kableExtra::kable(df)
-kableExtra::kable_styling(rt, latex_options = 'scale_down')
 ```
+
+```{r, echo=FALSE}
+knitr::kable(df, caption = "A caption {#tbl-my-kable}")
+```
+
+See @tbl-my-kable for a Kable table.
+
+```{r, echo=FALSE}
+kableExtra::kable(df, caption = "A caption {#tbl-my-kekable}")
+```
+
+See @tbl-my-kekable for a Kable Extra table.
