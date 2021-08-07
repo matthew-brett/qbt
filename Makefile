@@ -1,13 +1,14 @@
 all: html rmhtml pdf
 
 html:
-	quarto render
+	quarto render . --no-cache
 
 pdf:
-	quarto render --to pdf
+	quarto render . --to pdf --no-cache
 
 rmhtml:
-	# RMarkdown insists on the file extension.
-	cp intro.qmd intro.Rmd
-	Rscript -e "rmarkdown::render('intro.Rmd', output_file='rmintro.html')"
-	rm intro.Rmd
+	Rscript -e "rmarkdown::render('rmintro.Rmd', output_file='rmintro.html')"
+	Rscript -e "rmarkdown::render('rmintro.Rmd', output_file='rmintro.pdf')"
+
+clean:
+	rm -rf .quarto _book/ *.html

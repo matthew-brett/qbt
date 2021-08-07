@@ -1,0 +1,27 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+```{r, echo=FALSE}
+df <- read.csv('some_days.csv')
+```
+
+```{r, my-kable, echo=FALSE}
+knitr::kable(df, caption = "A caption")
+```
+
+See \@ref(tab:my-kable) for a Kable table.
+
+```{r, my-ketable, echo=FALSE}
+kableExtra::kable(df, caption = "A caption")
+```
+
+See \@ref(tab:my-kekable) for a Kable Extra table.
+
+```{r, my-fkekable, echo=FALSE}
+kt <- kableExtra::kable(df,
+    caption = "A caption")
+kableExtra::kable_styling(kt, latex_options = 'scale_down')
+```
+
+See \@ref(tab:my-fkekable) for a formatted Kable Extra table.
